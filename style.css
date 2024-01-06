@@ -1,0 +1,41 @@
+:root{
+  --primary-color: #10106e;
+  --secondary-color: #eed877;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+h1{
+    text-align: center;
+}
+
+body {
+    color: var(--secondary-color);
+    background: var(--primary-color);
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 7px;
+    margin: 8px auto;
+}
+
+button:hover{
+ background-color: rgb(173, 173, 58);
+ 
+}
+
+input, select {
+    border-radius: 7px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+  }

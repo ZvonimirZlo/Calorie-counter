@@ -6,17 +6,17 @@ const clearButton = document.getElementById('clear');
 const output = document.getElementById('output');
 let isError = false;
 
-function cleanInputString(str) {
+const cleanInputString = (str) => {
   const regex = /[+-\s]/g;
   return str.replace(regex, '');
 }
 
-function isInvalidInput(str) {
+const isInvalidInput = (str) => {
   const regex = /\d+e\d+/i;
   return str.match(regex);
 }
 
-function addEntry() {
+const addEntry = () => {
   const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`);
   const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
   const HTMLString = `
@@ -32,7 +32,7 @@ function addEntry() {
   targetInputContainer.insertAdjacentHTML('beforeend', HTMLString);
 }
 
-function calculateCalories(e) {
+const calculateCalories = (e) => {
   e.preventDefault();
   isError = false;
 
@@ -67,7 +67,7 @@ function calculateCalories(e) {
   output.classList.remove('hide');
 }
 
-function getCaloriesFromInputs(list) {
+const getCaloriesFromInputs = (list) => {
   let calories = 0;
 
   for (let i = 0; i < list.length; i++) {
@@ -84,7 +84,7 @@ function getCaloriesFromInputs(list) {
   return calories;
 }
 
-function clearForm() {
+const clearForm = () => {
   const inputContainers = Array.from(document.querySelectorAll('.input-container'));
 
   for (let i = 0; i < inputContainers.length; i++) {
