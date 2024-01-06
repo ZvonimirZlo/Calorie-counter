@@ -46,10 +46,22 @@ input, select {
     flex-direction: column;
   }
 
+  .surplus {
+    font-size: 27px;
+    color: greenyellow;
+  }
+
+  .deficit {
+    font-size: 27px;
+    color: red;
+  }
+
   fieldset {
     border-radius: 7px;
     border-width: 3px;
     border-color: var(--secondary-color);
   }
+
+
 
   
