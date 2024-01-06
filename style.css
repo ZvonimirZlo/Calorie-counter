@@ -1,6 +1,6 @@
-:root{
-  --primary-color: linear-gradient(90deg, rgb(12, 12, 110), rgb(192, 59, 137));
-  --secondary-color: #eed877;
+:root {
+    --primary-color: linear-gradient(90deg, rgb(12, 12, 110), rgb(192, 59, 137));
+    --secondary-color: #eed877;
 }
 
 
@@ -10,7 +10,7 @@
     margin: 20px auto;
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
@@ -29,12 +29,13 @@ button {
     font-weight: bold;
 }
 
-button:hover{
- background-color: rgb(192, 59, 137);
- transition: background-color ease-in-out .2s;
+button:hover {
+    background-color: rgb(192, 59, 137);
+    transition: background-color ease-in-out .2s;
 }
 
-input, select {
+input,
+select {
     color: black;
     border-radius: 7px;
     background-color: rgb(240, 233, 233);
@@ -44,24 +45,20 @@ input, select {
 .input-container {
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .surplus {
+.surplus {
     font-size: 27px;
     color: greenyellow;
-  }
+}
 
-  .deficit {
+.deficit {
     font-size: 27px;
     color: red;
-  }
+}
 
-  fieldset {
+fieldset {
     border-radius: 7px;
     border-width: 3px;
     border-color: var(--secondary-color);
-  }
-
-
-
-  
+}
