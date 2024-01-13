@@ -1,1 +1,1 @@
-Calorie counter html/css/js project
+Calorie counter in html/css/js.
